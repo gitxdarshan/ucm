@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Companions | THE PRIVATE CONCIERGE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#e3e3de",
+                        "secondary-container": "#464746",
+                        "tertiary-container": "#b2b3af",
+                        "on-primary-fixed-variant": "#574500",
+                        "surface-bright": "#393939",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface": "#e5e2e1",
+                        "primary-fixed-dim": "#e9c349",
+                        "primary": "#f2ca50",
+                        "surface-variant": "#353534",
+                        "primary-container": "#d4af37",
+                        "surface-dim": "#131313",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#3c2f00",
+                        "on-tertiary": "#2f312e",
+                        "inverse-primary": "#735c00",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-container-highest": "#353534",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-fixed-dim": "#c7c6c4",
+                        "secondary-fixed": "#e3e2e0",
+                        "tertiary": "#cececa",
+                        "on-tertiary-fixed-variant": "#454744",
+                        "surface": "#131313",
+                        "inverse-on-surface": "#313030",
+                        "on-secondary": "#303130",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-container": "#444542",
+                        "on-primary-fixed": "#241a00",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c6c7c2",
+                        "on-tertiary-fixed": "#1a1c19",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container": "#201f1f",
+                        "on-secondary-container": "#b5b5b3",
+                        "background": "#131313",
+                        "on-secondary-fixed-variant": "#464746",
+                        "surface-tint": "#e9c349",
+                        "outline": "#99907c",
+                        "secondary": "#c7c6c4",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#ffe088",
+                        "on-error": "#690005",
+                        "on-primary-container": "#554300",
+                        "on-secondary-fixed": "#1b1c1b",
+                        "on-background": "#e5e2e1",
+                        "outline-variant": "#4d4635"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .gold-gradient {
+            background: linear-gradient(45deg, #f2ca50, #d4af37);
+        }
+        .profile-card-hover:hover .profile-image {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl dark:bg-[#131313]/60 shadow-[0_20px_50px_rgba(233,195,73,0.04)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-widest text-[#f2ca50] dark:text-[#f2ca50] font-headline">
+                THE PRIVATE CONCIERGE
+            </div>
+<div class="hidden md:flex items-center gap-10 font-noto-serif tracking-tight text-sm uppercase">
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Home</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">About</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Services</a>
+<a class="text-[#f2ca50] border-b-2 border-[#f2ca50] pb-1 hover:opacity-80 transition-all duration-300" href="#">Companions</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">For NRI Families</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="gold-gradient text-on-primary font-label text-[10px] uppercase tracking-[0.2em] font-bold py-3 px-8 rounded-xl scale-95 active:duration-150 hover:opacity-80 transition-all duration-300">
+                Private Consultation
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Title Section -->
+<header class="max-w-7xl mx-auto px-6 md:px-12 mb-20 text-center">
+<div class="inline-block mb-4">
+<span class="font-label text-[10px] uppercase tracking-[0.4em] text-primary">Curation Excellence</span>
+<div class="h-[1px] w-12 bg-primary/40 mx-auto mt-2"></div>
+</div>
+<h1 class="text-5xl md:text-7xl font-headline text-on-surface tracking-tight mb-6">
+                Our Elite Companions
+            </h1>
+<p class="max-w-2xl mx-auto text-on-surface-variant font-body font-light text-lg leading-relaxed">
+                A highly vetted circle of professionals chosen for their emotional intelligence, 
+                cultural depth, and unwavering commitment to discreet service.
+            </p>
+</header>
+<!-- Profiles Grid -->
+<section class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Profile Card 1 -->
+<div class="group profile-card-hover cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Elena Vance" class="profile-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Close-up portrait of a professional woman with a warm, empathetic expression in a soft-lit, upscale library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6DDQUhMAawthyzolnXWp83UFutbOIX2mWtjy6QPYmrBrbkQ6ouHmT5AIVUuUSvHh-KvsIQcjsN9Mcagc8h4QOdUm2jRGz-2UKlytQJ5kq8gGpEdcvpK0AK0jb4dWD70Y4zykwBdyXqUMWWQDG34rNQyn5fopFn4NQxC3QxXR6Ke0BkQWHtEQigib0SXK4Ef9XFxaYyZSmWOvTXfpVSQekpsJMpdogVY_0aTwFjz0ONkAkGHPkW2Kb_T84BoZaL51NaTcSYDviktk"/>
+<div class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-[9px] font-label font-bold uppercase tracking-widest text-on-surface">Verified Elite</span>
+</div>
+</div>
+<div class="space-y-1">
+<h3 class="text-2xl font-headline text-on-surface">Elena Vance</h3>
+<p class="text-primary font-label text-[10px] uppercase tracking-widest">10 Years Experience</p>
+<p class="text-on-surface-variant text-sm font-light pt-2">Specialty: Emotional Support &amp; Fine Arts</p>
+</div>
+</div>
+<!-- Profile Card 2 -->
+<div class="group profile-card-hover cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Julian Thorne" class="profile-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Professional man with distinguished features, wearing a tailored blazer, posing in a high-end architectural space with warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNo7z9Y1wBjoPRaNUVIt8hrZzJtayJ0z5y--R___8wa4aj6mcMIMF4zMQPbn0TvfM2cDHo19y8ObPC4BRB6uKNgCRdJjGUtWzv_rSmqlfUaXMKFogQDsZ5_2Q4mz5zYcEfBN6yo87AUkDszbR-1M3aSkMhcFdiikdPcMZI1XwRhoNK17g0XHO8CYj6M8TXhawxFnvlK3rbweTKWy54FItj3jF21KGkp7dfGDXqbasP-t5dwqixB_kZMy58db691E850TDCuMV3-OA"/>
+<div class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-[9px] font-label font-bold uppercase tracking-widest text-on-surface">Verified Elite</span>
+</div>
+</div>
+<div class="space-y-1">
+<h3 class="text-2xl font-headline text-on-surface">Julian Thorne</h3>
+<p class="text-primary font-label text-[10px] uppercase tracking-widest">12 Years Experience</p>
+<p class="text-on-surface-variant text-sm font-light pt-2">Specialty: Intellectual Discourse &amp; Global Travel</p>
+</div>
+</div>
+<!-- Profile Card 3 -->
+<div class="group profile-card-hover cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Sophia Mercer" class="profile-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Elegant woman smiling gently, dressed in business casual, standing in a bright sunlit garden courtyard with soft focus flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChGDf4BYf1qwD3uZRTu-oUOh1voXiXQc720gwmn5IhqWmrt4wSCTGgFH39p4vHuw0RWTF-sHbW5RzGdUu1YmcAugNXPkL86oqbfjIXv0_iDQR0f7bboSPOqHeyIZZVsdsVIyf12LI8stpOxuzHdt0YGM1UvKPMZyg_X-bOrfnEhd8lxi-dALxHBCJi_1ahk7pAQ1lEz300IbzGWUZiflFT6Jp3cpCJJxaOyguj5R2HJ9d6k_7ZfeeQA56BZIlxGi8hAJSqn8NMnqQ"/>
+<div class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-[9px] font-label font-bold uppercase tracking-widest text-on-surface">Verified Elite</span>
+</div>
+</div>
+<div class="space-y-1">
+<h3 class="text-2xl font-headline text-on-surface">Sophia Mercer</h3>
+<p class="text-primary font-label text-[10px] uppercase tracking-widest">8 Years Experience</p>
+<p class="text-on-surface-variant text-sm font-light pt-2">Specialty: Holistic Wellness &amp; Literature</p>
+</div>
+</div>
+<!-- Profile Card 4 -->
+<div class="group profile-card-hover cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Alexander St. James" class="profile-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Mature gentleman with a kind face and silver hair, wearing high-quality knitwear, soft natural morning light in a penthouse setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhn-BcjBy1633D19EtRp-HaBFCgnplWf7jgITK4LtgdKqPd5xnqVgFtM8vuPxymINubx4s66F2R7-USqLBn-qqHn6tLyNmMjMsZhEwm-6S33NziJSO0ker4QSj4oroIUKE-clcyOvlIZrYx-kLryNQXjzeefS8E5FsZwZh2aSjW-uhhhMQM3Enr25it5iEZqaTpl7sqOEKspDnIy9k7v5GZ2qDLS7OYDc9A6rf2UUdi-hdpuph10lI0gUGMdhgOH97beHG-Jtt2JA"/>
+<div class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-[9px] font-label font-bold uppercase tracking-widest text-on-surface">Verified Elite</span>
+</div>
+</div>
+<div class="space-y-1">
+<h3 class="text-2xl font-headline text-on-surface">Alexander St. James</h3>
+<p class="text-primary font-label text-[10px] uppercase tracking-widest">15 Years Experience</p>
+<p class="text-on-surface-variant text-sm font-light pt-2">Specialty: Classical Music &amp; Philosophy</p>
+</div>
+</div>
+<!-- Profile Card 5 -->
+<div class="group profile-card-hover cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Marcus Vane" class="profile-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Younger professional man with an approachable and respectful demeanor, clean-cut style, standing in a sleek modern art gallery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2OzXU7z98XnpeLXSDORPlsEQMHe9M0nPGmxB3K7yXpsi9JaxcUP9i3ztZmBI-yhJd89bWG4qVjT7jgbj0iVxNFkkUBZhdALQdHb8tqXLOkUPBhcH6T3FcRTRUCHvVC9T5Dbd7z56tN96tbn2DzFFXAYLarGwldvFvaquICmC8Ma1Uh8P1uoFw-1e8ae2mf7RMz4s8McF8iyxlwg4YPTZaCr52QRmNtDXY1CfofFSTdtHI9o9TT-FZR0vxPaPE7JF7l3mmC0QLksM"/>
+<div class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-[9px] font-label font-bold uppercase tracking-widest text-on-surface">Verified Elite</span>
+</div>
+</div>
+<div class="space-y-1">
+<h3 class="text-2xl font-headline text-on-surface">Marcus Vane</h3>
+<p class="text-primary font-label text-[10px] uppercase tracking-widest">7 Years Experience</p>
+<p class="text-on-surface-variant text-sm font-light pt-2">Specialty: Tech Literacy &amp; Active Lifestyle</p>
+</div>
+</div>
+<!-- Profile Card 6 -->
+<div class="group profile-card-hover cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Isabella Croft" class="profile-image w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="Poised woman of color with a welcoming expression, wearing sophisticated jewelry and silk, indoor setting with warm golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7S20HR31zf4d9Zp2Uzecp7KSZfY7o8U93Nhy_T_HEiYaCep7DHbSp_22vcl9MNrIkIWnwkBHCEiEEY6VYqX9tSkihGnLaQWVrdiQJ7Mkdhl5G6N0-7KBZME3MfKFDHLhrKmKoa4F4ogE8sFAgwt0ffZxqWg5rh9fnbOB88SjkV5fAZKwJ1O7KVeP424hAzSHGg75SLREUTXIZR6paqzS1R85p1ZYO5X9ANjhH68W4iIMHZxjysTHXK0ubrDmVxPZsYzR9z5TEazk"/>
+<div class="absolute top-4 right-4 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-[9px] font-label font-bold uppercase tracking-widest text-on-surface">Verified Elite</span>
+</div>
+</div>
+<div class="space-y-1">
+<h3 class="text-2xl font-headline text-on-surface">Isabella Croft</h3>
+<p class="text-primary font-label text-[10px] uppercase tracking-widest">9 Years Experience</p>
+<p class="text-on-surface-variant text-sm font-light pt-2">Specialty: Culinary Arts &amp; Cultural History</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-32 max-w-5xl mx-auto px-6">
+<div class="bg-surface-container-low rounded-xl p-12 md:p-20 text-center border border-outline-variant/10">
+<h2 class="text-3xl md:text-4xl font-headline mb-8">Ready to find the perfect match?</h2>
+<p class="text-on-surface-variant font-body mb-10 max-w-xl mx-auto">Our selection process is deeply personal. We invite you to a private consultation to discuss your family's unique needs.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="gold-gradient text-on-primary font-label text-xs uppercase tracking-widest font-bold py-5 px-12 rounded-xl transition-all hover:opacity-90">
+                        Schedule Consultation
+                    </button>
+<button class="bg-surface-container-highest text-on-surface font-label text-xs uppercase tracking-widest font-bold py-5 px-12 rounded-xl border border-outline-variant/20 hover:bg-surface-bright transition-all">
+                        View Our Process
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] dark:bg-[#0e0e0e] w-full border-t border-[#2a2a2a]">
+<div class="flex flex-col items-center gap-8 py-20 px-12 text-center">
+<div class="text-lg font-noto-serif italic text-[#d4af37]">THE PRIVATE CONCIERGE</div>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-4 font-manrope text-xs tracking-widest uppercase">
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors hover:opacity-70" href="#">Privacy Policy</a>
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors hover:opacity-70" href="#">Terms of Service</a>
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors hover:opacity-70" href="#">Imprint</a>
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors hover:opacity-70" href="#">Press</a>
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors hover:opacity-70" href="#">Careers</a>
+</div>
+<p class="font-manrope text-xs tracking-widest uppercase text-[#f2ca50] opacity-60">
+                © THE PRIVATE CONCIERGE. BY PRIVATE APPOINTMENT ONLY.
+            </p>
+</div>
+</footer>
+</body></html>

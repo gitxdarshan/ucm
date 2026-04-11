@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e3e3de",
+                    "secondary-container": "#464746",
+                    "tertiary-container": "#b2b3af",
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-bright": "#393939",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface": "#e5e2e1",
+                    "primary-fixed-dim": "#e9c349",
+                    "primary": "#f2ca50",
+                    "surface-variant": "#353534",
+                    "primary-container": "#d4af37",
+                    "surface-dim": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "on-primary": "#3c2f00",
+                    "on-tertiary": "#2f312e",
+                    "inverse-primary": "#735c00",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-highest": "#353534",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-fixed-dim": "#c7c6c4",
+                    "secondary-fixed": "#e3e2e0",
+                    "tertiary": "#cececa",
+                    "on-tertiary-fixed-variant": "#454744",
+                    "surface": "#131313",
+                    "inverse-on-surface": "#313030",
+                    "on-secondary": "#303130",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-container": "#444542",
+                    "on-primary-fixed": "#241a00",
+                    "error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c6c7c2",
+                    "on-tertiary-fixed": "#1a1c19",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-container": "#201f1f",
+                    "on-secondary-container": "#b5b5b3",
+                    "background": "#131313",
+                    "on-secondary-fixed-variant": "#464746",
+                    "surface-tint": "#e9c349",
+                    "outline": "#99907c",
+                    "secondary": "#c7c6c4",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#ffe088",
+                    "on-error": "#690005",
+                    "on-primary-container": "#554300",
+                    "on-secondary-fixed": "#1b1c1b",
+                    "on-background": "#e5e2e1",
+                    "outline-variant": "#4d4635"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .glass-card {
+        background: rgba(57, 57, 57, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .gold-gradient {
+        background: linear-gradient(45deg, #f2ca50, #d4af37);
+      }
+      .text-shadow-subtle {
+        text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl shadow-[0_20px_50px_rgba(233,195,73,0.04)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-widest text-[#f2ca50] font-headline uppercase">THE PRIVATE CONCIERGE</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline tracking-tight text-sm uppercase text-[#d0c5af] hover:text-[#f2ca50] transition-colors" href="#">Home</a>
+<a class="font-headline tracking-tight text-sm uppercase text-[#d0c5af] hover:text-[#f2ca50] transition-colors" href="#">About</a>
+<a class="font-headline tracking-tight text-sm uppercase text-[#d0c5af] hover:text-[#f2ca50] transition-colors" href="#">Services</a>
+<a class="font-headline tracking-tight text-sm uppercase text-[#d0c5af] hover:text-[#f2ca50] transition-colors" href="#">Companions</a>
+<a class="font-headline tracking-tight text-sm uppercase text-[#f2ca50] border-b-2 border-[#f2ca50] pb-1" href="#">For NRI Families</a>
+<a class="font-headline tracking-tight text-sm uppercase text-[#d0c5af] hover:text-[#f2ca50] transition-colors" href="#">Contact</a>
+</div>
+<button class="gold-gradient text-on-primary font-headline text-xs tracking-widest uppercase px-6 py-3 rounded-xl hover:opacity-80 transition-all duration-300 scale-95 active:duration-150">
+                Private Consultation
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40" data-alt="Cinematic wide shot of a luxury apartment window overlooking a serene city skyline at dusk with warm interior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4OtO7UYQUhrVV1fLTP_BmxUUKceXzW9qtfbYKFO1zHOc1H3LDPOrrxU0qvWt8AvpPVoxAxtSdSO-oqPeDGE71vJro_FxNGSWzpriXnFqM1lw-7zAZpk7FCEf9hfRP0zWc24_0P2jNZyZ03Za4qQJmtFtc8pOZwlhAIgqR0VdCLW0Pp7YcJbUTu23xD6ymxVcbDL1mtElKEAPVwKm6qChCv7nDzbxd7EBQ-iDW7uqavRxfqMABx9LYQny2cj7PNsgJbnm20iACfbI"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-background"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-12 grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-7 flex flex-col justify-center space-y-8">
+<span class="font-label text-primary tracking-[0.3em] uppercase text-sm">For Families Living Abroad</span>
+<h1 class="font-headline text-6xl md:text-8xl leading-tight tracking-tight italic">
+                    Bridging the <br/>
+<span class="text-on-surface-variant not-italic">Distance</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed max-w-xl">
+                    While your success spans continents, your heart remains home. We curate the presence you cannot provide physically.
+                </p>
+<div class="pt-4">
+<button class="gold-gradient text-on-primary font-headline text-sm tracking-widest uppercase px-10 py-5 rounded-xl hover:opacity-90 transition-all group inline-flex items-center gap-4">
+                        Request a Prospectus
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-5 hidden md:flex items-center justify-end">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full"></div>
+<div class="relative glass-card p-1 rounded-full overflow-hidden border border-white/5">
+<img class="w-[450px] h-[600px] object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="An elderly woman smiling warmly during a video call on a tablet, soft morning sunlight through linen curtains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGOWNoekfD6eCUum_XGl1MBNGopQ_2NRj4htEoElwdFHcgtZGNutiCKOFlFd8UFnWQx1ezIYVt4u4FMst14BkYUMvqx-RPbVmlGKNe5MHKJ_2OTQR83SYiD1-PRz00MwyMATK-eOn0Z1Q7gtgFuLYBVOva5unVvHmggKJiPQ6WZb6n1uVBFVQtuzm61irU3sFdbIF0lsoF49VjP-cgXHAWBktdsD9S6Ct8JS8yEysiXR2qoLakypTC-htNNc--VjkbEkGO8UkfKPg"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Emotional Story Section -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-screen-xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<div class="space-y-6">
+<h2 class="font-headline text-4xl md:text-5xl leading-tight">The Peace of Mind That <br/> Comes from Knowing.</h2>
+<div class="w-24 h-px bg-primary"></div>
+</div>
+<div class="space-y-8 text-on-surface-variant font-light text-lg leading-relaxed">
+<p>
+                            Living thousands of miles away brings a unique weight. The missed festivals, the unasked health questions, the quiet moments of loneliness that your parents might never mention over a phone call.
+                        </p>
+<p>
+                            At The Private Concierge, we serve as your hands and eyes. Our companions aren't just caregivers; they are curated matches who share interests, language, and cultural nuances with your family.
+                        </p>
+<p class="italic text-on-surface">
+                            "We provide the presence that ensures you never have to wonder if they are truly okay. You see it for yourself."
+                        </p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6 relative">
+<div class="space-y-6 pt-12">
+<img class="rounded-xl w-full h-80 object-cover" data-alt="Two hands clasped together, one young and one older, in a gesture of comfort and trust, soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhGXN174Wyb_J62f1kb4fJwmDBldwqzzfLG7PbSmfRKoksOKvx24FvgNqrfg4EWIUeyr0ZAse_j6740cd8OqKKoO6yGjuvlMADmIuSGcJoPgOaGl9SJshSOaAKH8nKEXWwQpVAcLgyck6nMQ9wdVk61nSJIHb9GpUFOmG7GzSwyikpXFjofeWshAPLyN4u8D83W967w4AoO5edp1XTjD-3i1jrdnFJxLearrnKQz5vvWyK2CO2F9Zu8imhUQmKdFSDFjS0-nvuqTg"/>
+<img class="rounded-xl w-full h-48 object-cover" data-alt="Luxury home library with classic leather chairs and warm amber lighting reflecting off polished wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDZN-a4gUdXpBibcpPRifM9DdNMqxCtEspkOmAPllO4P7CZoQOjZKrzFYHsOo2AcK7kMAlXuDC5tVfr1HMnjeHF_PmzUKv4JSSOnHTPUYLasINVjoHDgTG-4IKFDS5i3gvEgm93y2WPus-aUwIHk92FiicPAIMbhthMOTsMt-CytINXmei1zRw81jWhylAinsYztUDaCW1HCA-owRcFNk7E1H9-UqqQSMq-YgSqd7DpRN1VHX71PiNZbo2vU-zKjBxNSvVK5yt3as"/>
+</div>
+<div class="space-y-6">
+<img class="rounded-xl w-full h-48 object-cover" data-alt="A companion reading a book to an elderly man in a sunlit garden, peaceful and serene atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6HMic3k6tn33klbSq4Gt96VV5C-COcJakO3mmFqr9zSGyaDu8JeE3P-u2ChT-bk6ACs0atCJ8pJXt6fn6yJLfArzbD9YG2deOThvNhFV-qRvwN-8lqFyRuwhijf_vt9i-yXtcPa8-bZUQcWl921DhQXmbB-bffPVcys_a8-s_5_tYaIr0Dmoxxf6QnAgszeVTMCKiLI093HmmZ999fgFZ9vrNg_O7_4vy__lSd7DYLd3N1ZerG3hBiC_NlsYrI_zff_xoF6PQwL0"/>
+<img class="rounded-xl w-full h-80 object-cover" data-alt="Close up of high-end herbal tea being poured into a porcelain cup, steam rising elegantly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNp_bYF5q52u_w2_MkcUEHw0i60C-XPxSx1BCXYxKzaM2zgYFHSNGRsJIWNfjJucNOyCG56hQCNBrAi4kbh-PC58RnoNtzBQjH3cc8Y-yWWHMZ96kcankMrWfOqXXWGQQMVllFDBF9GpQx1PRQz4zaYSUdoo7mgP5yajW3jUoaaJrkkA7NjUFpbJAoXjsk1GGVSlvzQUzvl7lHM6SxDz6vz0HLEC496_Vk5WTOWcj9vNSl-JAhkUAbMBrb97sRNhxUc9DZX4jeMaQ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Update System Section (Dashboard Mockup) -->
+<section class="py-32 bg-surface relative overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center mb-20 space-y-4">
+<span class="font-label text-primary tracking-[0.3em] uppercase text-xs">Total Transparency</span>
+<h2 class="font-headline text-4xl md:text-5xl">The Update System</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 space-y-12">
+<div class="space-y-4">
+<h3 class="font-headline text-2xl text-on-surface">Digital Proximity</h3>
+<p class="text-on-surface-variant leading-relaxed">Our proprietary dashboard allows you to feel present at a moment's notice. No more relying on vague responses; receive detailed visual and narrative updates directly on your device.</p>
+</div>
+<ul class="space-y-8">
+<li class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">photo_camera</span>
+<div>
+<h4 class="font-medium mb-1">Visual Moments</h4>
+<p class="text-sm text-on-surface-variant">Daily photographs of meals, walks, and activities.</p>
+</div>
+</li>
+<li class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">description</span>
+<div>
+<h4 class="font-medium mb-1">Health &amp; Wellness Log</h4>
+<p class="text-sm text-on-surface-variant">Professional summaries of medical vitals and mood tracking.</p>
+</div>
+</li>
+<li class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+<div>
+<h4 class="font-medium mb-1">Weekly Video Narrative</h4>
+<p class="text-sm text-on-surface-variant">A personal video message from the companion summarizing the week.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="lg:col-span-7 flex justify-center">
+<div class="relative w-full max-w-[400px]">
+<!-- Smartphone UI Mock -->
+<div class="bg-surface-container-highest border-[8px] border-surface-container-high rounded-[3rem] aspect-[9/19] shadow-2xl overflow-hidden relative">
+<!-- Notch -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-surface-container-high rounded-b-2xl z-20"></div>
+<!-- UI Content -->
+<div class="p-6 pt-12 space-y-6">
+<div class="flex justify-between items-center">
+<div class="space-y-1">
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant">Welcome back, Rohan</p>
+<h4 class="font-headline text-xl">Parent Update</h4>
+</div>
+<div class="w-10 h-10 rounded-full border border-primary/20 bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm text-primary">notifications</span>
+</div>
+</div>
+<div class="glass-card p-4 rounded-xl space-y-4 border border-white/5">
+<div class="flex justify-between items-center">
+<span class="text-[10px] text-on-surface-variant">CURRENT STATUS</span>
+<span class="px-2 py-0.5 bg-green-500/10 text-green-400 text-[8px] rounded-full">ACTIVE NOW</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img data-alt="Close-up of an elderly man with silver hair and gentle eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCU83cwICupvaTAJxGthbmx33DmTdzq-NbA7j8BNLENqPFqb0uemxJhLxcnXGYemxcILfsvP0hX-aszMgKVEzveNFAo92-PJYlTY-vowKpadXhIGbiEHeMRBAcrNw7ZXcjPUi8TrOy3xJIsXQl3GZq5aDWkavkrhurzqCrfZPwhdEGLB7-smBrsfqVwsNqevqVVvbnSQ-ExhX9Y7MYScdwkwkwiUoO9xw8w9yvKuY1FPm9HSl2C7EVTirllF6qsQ-zg1yYvc8hB5U"/>
+</div>
+<div>
+<p class="font-semibold text-sm">Mr. Advani</p>
+<p class="text-[10px] text-on-surface-variant italic">Enjoying a garden tea in Delhi</p>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant">LATEST ACTIVITIES</p>
+<div class="grid grid-cols-2 gap-3">
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover opacity-80" data-alt="Plate of fresh gourmet healthy meal with vibrantly colored vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkRFJMQGYfywhH7T3tmtOMCLb8HGWIGQbouoAJogtQXTQhnMAXBk51F7rIzD1x7belp2InIo-wllGed5pTl-L6bAxBA7AzqlkiX2Hx0eFEnjRj3WZsO8zuX3eUWKiM3XOS_IYWkWEwvrEK5ev6M-I8Xss-UxbQQKaWJqv7N-mKbMK83763Cd05EyQUFQA5PZ1DWBQwa1_K96AQXHV2-aS67GMBb8_hrofu45orZEi48rYfKYio6qf1nJOyjAR13sJYvG4voKZovdg"/>
+<div class="absolute bottom-2 left-2 bg-black/40 backdrop-blur-md px-1.5 py-0.5 rounded text-[8px]">Nutrition</div>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover opacity-80" data-alt="Scenic park with lush greenery and a walking path in morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX-FGj-_ieR1eZP4Nd3sfiaBpy3fmK8m8b_IfbOA6m5LR2IBJm811EPYMO8pOMxSxKCC-MwA9CjJkTQSCm0auDEIB_87b5-h6BTUh0-Cww-SSdmfXKDlTdAQmQgBqn-OzvNISMcikZEz-LZ0qYtlyrxHRb3JHyjIlOBIAJeuNgIq-_4AxahfPaAM3ZOuCHT38Xv5Vt32o1RmEyNcLx6TlLvDlqd5tUc2oUDE0_c57YohD3Yawlft7i4vBXM6qPak4XGvHzo-nofX0"/>
+<div class="absolute bottom-2 left-2 bg-black/40 backdrop-blur-md px-1.5 py-0.5 rounded text-[8px]">Wellness</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/5 p-4 rounded-xl border border-primary/10">
+<div class="flex items-center justify-between mb-2">
+<p class="text-[10px] font-bold text-primary">COMPANION REPORT</p>
+<span class="text-[8px] text-on-surface-variant">10:30 AM</span>
+</div>
+<p class="text-[11px] leading-relaxed italic text-on-surface-variant">"Mr. Advani was in high spirits today. We discussed the new cricket series over tea. He walked for 20 mins..."</p>
+</div>
+</div>
+</div>
+<!-- Floating Accents -->
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -left-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Pillars Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="bg-surface p-12 rounded-xl space-y-6 hover:bg-surface-container-high transition-all duration-500 shadow-lg">
+<span class="material-symbols-outlined text-primary text-4xl">support_agent</span>
+<h3 class="font-headline text-2xl">24/7 Global Support</h3>
+<p class="text-on-surface-variant leading-relaxed font-light">Regardless of your time zone, our concierge desk is always awake. Real-time assistance for urgent requests and immediate updates.</p>
+</div>
+<div class="bg-surface p-12 rounded-xl space-y-6 hover:bg-surface-container-high transition-all duration-500 shadow-lg border-t border-primary/20">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="font-headline text-2xl">Verified Professionals</h3>
+<p class="text-on-surface-variant leading-relaxed font-light">Every companion undergoes a rigorous background check, psychometric testing, and cultural alignment training before their first visit.</p>
+</div>
+<div class="bg-surface p-12 rounded-xl space-y-6 hover:bg-surface-container-high transition-all duration-500 shadow-lg">
+<span class="material-symbols-outlined text-primary text-4xl">assignment_turned_in</span>
+<h3 class="font-headline text-2xl">Weekly Audited Reports</h3>
+<p class="text-on-surface-variant leading-relaxed font-light">Comprehensive summaries audited by our internal wellness experts to ensure the highest standard of care and engagement.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA / Final Reassurance -->
+<section class="py-32 text-center bg-background">
+<div class="max-w-screen-md mx-auto px-12 space-y-12">
+<h2 class="font-headline text-4xl md:text-5xl leading-tight">The Distance is Emotional, <br/>Not Physical.</h2>
+<p class="text-on-surface-variant text-xl font-light">Connect with a private advisor today to discuss a bespoke plan for your family in India.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="gold-gradient text-on-primary font-headline text-sm tracking-widest uppercase px-12 py-5 rounded-xl hover:opacity-90 transition-all">
+                    Schedule a Consultation
+                </button>
+<button class="bg-surface-container-high text-on-surface font-headline text-sm tracking-widest uppercase px-12 py-5 rounded-xl hover:bg-surface-container-highest transition-all">
+                    Download Services Guide
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] border-t border-[#2a2a2a] w-full">
+<div class="flex flex-col items-center gap-8 py-20 px-12 text-center max-w-screen-2xl mx-auto">
+<div class="text-lg font-noto-serif italic text-[#d4af37]">THE PRIVATE CONCIERGE</div>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+<a class="font-manrope text-xs tracking-widest uppercase text-[#c7c6c4] hover:text-[#f2ca50] transition-colors" href="#">Privacy Policy</a>
+<a class="font-manrope text-xs tracking-widest uppercase text-[#c7c6c4] hover:text-[#f2ca50] transition-colors" href="#">Terms of Service</a>
+<a class="font-manrope text-xs tracking-widest uppercase text-[#c7c6c4] hover:text-[#f2ca50] transition-colors" href="#">Imprint</a>
+<a class="font-manrope text-xs tracking-widest uppercase text-[#c7c6c4] hover:text-[#f2ca50] transition-colors" href="#">Press</a>
+<a class="font-manrope text-xs tracking-widest uppercase text-[#c7c6c4] hover:text-[#f2ca50] transition-colors" href="#">Careers</a>
+</div>
+<div class="font-manrope text-xs tracking-widest uppercase text-[#f2ca50] pt-4 opacity-70">
+                © THE PRIVATE CONCIERGE. BY PRIVATE APPOINTMENT ONLY.
+            </div>
+</div>
+</footer>
+</body></html>

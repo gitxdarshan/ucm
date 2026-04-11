@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e3e3de",
+                    "secondary-container": "#464746",
+                    "tertiary-container": "#b2b3af",
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-bright": "#393939",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface": "#e5e2e1",
+                    "primary-fixed-dim": "#e9c349",
+                    "primary": "#f2ca50",
+                    "surface-variant": "#353534",
+                    "primary-container": "#d4af37",
+                    "surface-dim": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "on-primary": "#3c2f00",
+                    "on-tertiary": "#2f312e",
+                    "inverse-primary": "#735c00",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-highest": "#353534",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-fixed-dim": "#c7c6c4",
+                    "secondary-fixed": "#e3e2e0",
+                    "tertiary": "#cececa",
+                    "on-tertiary-fixed-variant": "#454744",
+                    "surface": "#131313",
+                    "inverse-on-surface": "#313030",
+                    "on-secondary": "#303130",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-container": "#444542",
+                    "on-primary-fixed": "#241a00",
+                    "error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c6c7c2",
+                    "on-tertiary-fixed": "#1a1c19",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-container": "#201f1f",
+                    "on-secondary-container": "#b5b5b3",
+                    "background": "#131313",
+                    "on-secondary-fixed-variant": "#464746",
+                    "surface-tint": "#e9c349",
+                    "outline": "#99907c",
+                    "secondary": "#c7c6c4",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#ffe088",
+                    "on-error": "#690005",
+                    "on-primary-container": "#554300",
+                    "on-secondary-fixed": "#1b1c1b",
+                    "on-background": "#e5e2e1",
+                    "outline-variant": "#4d4635"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #131313;
+            color: #e5e2e1;
+        }
+        .font-noto-serif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .glass-nav {
+            background-color: rgba(19, 19, 19, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .brushed-gold-gradient {
+            background: linear-gradient(45deg, #f2ca50, #d4af37);
+        }
+        .ghost-input {
+            border: none;
+            border-bottom: 1px solid rgba(77, 70, 53, 0.2);
+            background: transparent;
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .ghost-input:focus {
+            border-bottom: 1px solid #f2ca50;
+            box-shadow: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl dark:bg-[#131313]/60 shadow-[0_20px_50px_rgba(233,195,73,0.04)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-widest text-[#f2ca50] dark:text-[#f2ca50] font-noto-serif">THE PRIVATE CONCIERGE</div>
+<div class="hidden md:flex gap-8 font-noto-serif tracking-tight text-sm uppercase">
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Home</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">About</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Services</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Companions</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">For NRI Families</a>
+<a class="text-[#f2ca50] border-b-2 border-[#f2ca50] pb-1 hover:opacity-80 transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="brushed-gold-gradient text-on-primary px-6 py-2.5 rounded-xl font-body font-semibold text-sm tracking-wide hover:opacity-90 transition-all active:scale-95 duration-150 shadow-[0_10px_20px_rgba(242,202,80,0.1)]">
+                Private Consultation
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Title Section -->
+<header class="mb-20 text-center md:text-left">
+<span class="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4 block">Discretion Guaranteed</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl tracking-tight text-on-surface leading-[1.1]">
+                Begin a <br/>
+<span class="italic text-primary">Private Consultation</span>
+</h1>
+</header>
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Contact Information Column -->
+<div class="lg:col-span-5 space-y-12">
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" data-alt="Close up of a luxury fountain pen resting on premium stationery paper with soft atmospheric side lighting in a dark study" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNm7OlTqj1vQMzVHgP4oF7R0H272PZpQXLndAOPdaFDDSzIdv09RBFvnM2PF-XG8rPEFUDBK3Fs9oODdqivg7MxCYlKjt1S0mQacYCWIZpT63WaFJ2sJwaCv9DkygP7NnujKId5ba5WpzuEljYi9D1mJ4fStn-yDsstwn0d7NuwOqpP_MoKzJOm5zgxaL80K-ckiSek8zDx0i7aLmq_XjcoECNGre9_EoqeUM3U1QQRTXmGq3bt1GvQnXQiMpc_WXN-k93bDeQ5-0"/>
+</div>
+<div class="absolute -bottom-8 -right-8 p-8 bg-surface-container-high/80 backdrop-blur-xl rounded-xl shadow-2xl max-w-xs border border-outline-variant/10">
+<p class="font-headline text-lg italic text-on-surface-variant leading-relaxed">
+                            "True service is felt, not seen. We await your invitation to curate excellence."
+                        </p>
+</div>
+</div>
+<div class="pt-12 space-y-8">
+<div>
+<h4 class="font-label text-[10px] tracking-[0.4em] uppercase text-primary mb-4">Direct Communication</h4>
+<div class="space-y-2">
+<p class="text-xl font-light text-on-surface">enquiries@privateconcierge.com</p>
+<p class="text-xl font-light text-on-surface">+44 (0) 20 7946 0123</p>
+</div>
+</div>
+<div>
+<h4 class="font-label text-[10px] tracking-[0.4em] uppercase text-primary mb-4">Global Headquarters</h4>
+<p class="text-on-surface-variant font-light leading-loose">
+                            Mayfair, London<br/>
+                            United Kingdom
+                        </p>
+</div>
+</div>
+</div>
+<!-- Form Column -->
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-16 rounded-xl border border-outline-variant/10 shadow-2xl">
+<form action="#" class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="block font-label text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Full Name</label>
+<input class="ghost-input w-full py-3 text-on-surface placeholder:text-surface-container-highest font-light tracking-wide" placeholder="ALEXANDER STERLING" type="text"/>
+</div>
+<div class="relative">
+<label class="block font-label text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Email Address</label>
+<input class="ghost-input w-full py-3 text-on-surface placeholder:text-surface-container-highest font-light tracking-wide" placeholder="A.STERLING@DOMAIN.COM" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="block font-label text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Phone Number</label>
+<input class="ghost-input w-full py-3 text-on-surface placeholder:text-surface-container-highest font-light tracking-wide" placeholder="+1 (000) 000-0000" type="tel"/>
+</div>
+<div class="relative">
+<label class="block font-label text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">City of Interest</label>
+<input class="ghost-input w-full py-3 text-on-surface placeholder:text-surface-container-highest font-light tracking-wide" placeholder="LONDON / ZURICH" type="text"/>
+</div>
+</div>
+<div class="relative">
+<label class="block font-label text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Message</label>
+<textarea class="ghost-input w-full py-3 text-on-surface placeholder:text-surface-container-highest font-light tracking-wide resize-none" placeholder="HOW MAY WE ASSIST YOU?" rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="w-full md:w-auto brushed-gold-gradient text-on-primary px-12 py-5 rounded-xl font-body font-bold text-sm tracking-[0.2em] uppercase hover:opacity-90 transition-all shadow-[0_20px_40px_rgba(242,202,80,0.15)] active:scale-[0.98]" type="submit">
+                            Request Private Consultation
+                        </button>
+</div>
+</form>
+</div>
+</section>
+<!-- Map Section -->
+<section class="mt-32">
+<div class="w-full h-80 rounded-xl overflow-hidden bg-surface-container-lowest grayscale relative border border-outline-variant/10 shadow-inner">
+<div class="absolute inset-0 opacity-20" data-alt="Minimalist abstract dark map of a city with thin gold lines representing streets and waterways" data-location="London" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjTOsf2kI3ixw_WFWcBOmoDxQa2dRY5y2f-C9KZdZze6qHpn87HhKQWNj2CgkSqtD6SIvSj7_mH-9sF4mlRnLsrhfvVxyIBTI9ZOKU7RdC3qWEBSzcPzGQQm2t7xdmmotPRzmeu1-Y4Q30xsj79UEb61mpl-fx3e-jrZ4X9tK-lfVoTqRXTp4mkvgllRX-DKKCbjIDNzJmPvG2cfBqI_ELLfsDIR-Aqdv91B6VAnXKBoiysCrlH7YaLg3ISYQyq6fWoGAD4xroUgQ'); background-size: cover; background-position: center;">
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-surface/80 backdrop-blur-md px-6 py-4 rounded-xl border border-primary/20 shadow-2xl text-center">
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<p class="font-headline text-sm tracking-widest uppercase">Global Presence</p>
+<p class="text-[10px] text-on-surface-variant tracking-wider mt-1 uppercase">London | New York | Mumbai | Dubai</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#2a2a2a] bg-[#0e0e0e] dark:bg-[#0e0e0e]">
+<div class="flex flex-col items-center gap-8 py-20 px-12 text-center max-w-screen-2xl mx-auto">
+<div class="text-lg font-noto-serif italic text-[#d4af37]">THE PRIVATE CONCIERGE.</div>
+<div class="max-w-md mx-auto mb-4">
+<p class="font-label text-[10px] tracking-[0.4em] uppercase text-primary leading-relaxed opacity-80">
+                    BY PRIVATE APPOINTMENT ONLY. <br/>
+                    COMPLETE DISCRETION IS OUR HALLMARK.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-manrope text-xs tracking-widest uppercase">
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors opacity-100 hover:opacity-70" href="#">Privacy Policy</a>
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors opacity-100 hover:opacity-70" href="#">Terms of Service</a>
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors opacity-100 hover:opacity-70" href="#">Imprint</a>
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors opacity-100 hover:opacity-70" href="#">Press</a>
+<a class="text-[#c7c6c4] hover:text-[#f2ca50] transition-colors opacity-100 hover:opacity-70" href="#">Careers</a>
+</div>
+<p class="font-manrope text-[10px] tracking-widest uppercase text-[#c7c6c4]/40 mt-8">
+                © THE PRIVATE CONCIERGE. BY PRIVATE APPOINTMENT ONLY.
+            </p>
+</div>
+</footer>
+</body></html>

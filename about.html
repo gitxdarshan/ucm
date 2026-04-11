@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e3e3de",
+                    "secondary-container": "#464746",
+                    "tertiary-container": "#b2b3af",
+                    "on-primary-fixed-variant": "#574500",
+                    "surface-bright": "#393939",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface": "#e5e2e1",
+                    "primary-fixed-dim": "#e9c349",
+                    "primary": "#f2ca50",
+                    "surface-variant": "#353534",
+                    "primary-container": "#d4af37",
+                    "surface-dim": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "on-primary": "#3c2f00",
+                    "on-tertiary": "#2f312e",
+                    "inverse-primary": "#735c00",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container-highest": "#353534",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-fixed-dim": "#c7c6c4",
+                    "secondary-fixed": "#e3e2e0",
+                    "tertiary": "#cececa",
+                    "on-tertiary-fixed-variant": "#454744",
+                    "surface": "#131313",
+                    "inverse-on-surface": "#313030",
+                    "on-secondary": "#303130",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-container": "#444542",
+                    "on-primary-fixed": "#241a00",
+                    "error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c6c7c2",
+                    "on-tertiary-fixed": "#1a1c19",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-container": "#201f1f",
+                    "on-secondary-container": "#b5b5b3",
+                    "background": "#131313",
+                    "on-secondary-fixed-variant": "#464746",
+                    "surface-tint": "#e9c349",
+                    "outline": "#99907c",
+                    "secondary": "#c7c6c4",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#ffe088",
+                    "on-error": "#690005",
+                    "on-primary-container": "#554300",
+                    "on-secondary-fixed": "#1b1c1b",
+                    "on-background": "#e5e2e1",
+                    "outline-variant": "#4d4635"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #131313; }
+        .glass-nav { backdrop-filter: blur(20px); }
+        .hero-vignette {
+            background: radial-gradient(circle, rgba(19,19,19,0) 0%, rgba(14,14,14,0.8) 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl dark:bg-[#131313]/60 shadow-[0_20px_50px_rgba(233,195,73,0.04)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-widest text-[#f2ca50] dark:text-[#f2ca50] font-headline uppercase">
+                THE PRIVATE CONCIERGE
+            </div>
+<div class="hidden md:flex gap-8 font-noto-serif tracking-tight text-sm uppercase">
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Home</a>
+<a class="text-[#f2ca50] border-b-2 border-[#f2ca50] pb-1" href="#">About</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Services</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Companions</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">For NRI Families</a>
+<a class="text-[#d0c5af] hover:text-[#f2ca50] transition-colors hover:opacity-80 transition-all duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl text-xs font-label font-bold tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all">
+                Private Consultation
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Heritage Setting" class="w-full h-full object-cover opacity-60 grayscale-[0.3]" data-alt="Cinematic wide shot of a luxury vintage library with soft dust motes dancing in morning sunlight beams through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKaT22PLdyOFVOzWSMPc8qdMo6ht4IEAiTH0PcCbRlzB5mxnpzcu9GdL4Emu7j7Iou8IJ3YKHzXaXd6ozluNRP-C0EPMo1nHSloHoDr7LeOOsCuan9uLWTlex29e4DojVXKEdT1IsfHPw8ji6mMYjljvMinIHYJiu6evrskni2zZu-VkbHSJozKYp5YeJecjHteH7fCu1SttiHrT82QYrbJCvMrX4M4_7Ey9K9wJ3lJfKpK2XQy4Ta4A5OtkGgpyG-Zu5jR10kVic"/>
+<div class="absolute inset-0 hero-vignette"></div>
+</div>
+<div class="relative z-10 text-center px-6">
+<span class="font-label text-primary tracking-[0.3em] uppercase text-xs mb-6 block">Our Ethos</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface max-w-5xl mx-auto leading-tight italic">
+                    A Legacy of Care and Presence
+                </h1>
+</div>
+</section>
+<!-- Section 1: The Vision (Split Screen) -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto bg-surface">
+<div class="grid lg:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<div class="space-y-6">
+<h2 class="font-headline text-4xl text-primary-fixed-dim">The Vision</h2>
+<div class="w-24 h-[1px] bg-outline-variant"></div>
+</div>
+<div class="space-y-8 text-lg text-on-surface-variant leading-relaxed font-light">
+<p>
+                            We believe that aging is not a retreat, but a refined progression. THE PRIVATE CONCIERGE was born from a singular realization: that the most valuable luxury in the modern world is not service, but <span class="text-on-surface italic font-headline">presence</span>.
+                        </p>
+<p>
+                            Our philosophy centers on the preservation of dignity. We do not just manage households or coordinate medical care; we curate a lifestyle that honors the history and stature of our clients. Every interaction is designed to feel like a meeting between equals, conducted with the quiet grace of a long-standing family friendship.
+                        </p>
+<p>
+                            In an era of automated interactions, we remain steadfastly human. Our companions are chosen for their intellect, their empathy, and their shared appreciation for the finer nuances of a life well-lived.
+                        </p>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -top-6 -left-6 w-full h-full border border-outline-variant/20 rounded-xl transition-transform duration-700 group-hover:translate-x-3 group-hover:translate-y-3"></div>
+<img alt="Human Connection" class="relative z-10 rounded-xl w-full aspect-[4/5] object-cover shadow-2xl" data-alt="Detailed close-up of two people's hands resting on a dark wood table next to a silver tea service, warm indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx_2eTi_o-Bzu6_BGYE8I4k19tjKuhVU-mKoSF0BZwBamKTjfJF5y8O3lt42BcwFoFRaKPKMBfg-S_WcbngNf1MyR_eyp_PkfPYXr1NkfR42gTMsC_X-Ui28F4_Q8eovzX4imca2VPk9zfEJ4A9a5GndQ17RRl01jPWRPj3vXsPd0UwfH2sEVOSNB_S-uVtY3BtbcP6eDwaWDvZ7INkGf2Gzg1xgXWxv8BkaTprmeTNsQdjbKKLJAp2WIJ-bHd8mJcTb8n8cRX7ZI"/>
+</div>
+</div>
+</section>
+<!-- Section 2: The Pillars -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center mb-24">
+<h2 class="font-headline text-4xl mb-4">The Pillars</h2>
+<p class="font-label text-on-surface-variant tracking-widest uppercase text-xs">Our Core Commitments</p>
+</div>
+<div class="grid md:grid-cols-3 gap-16">
+<!-- Discreet -->
+<div class="group space-y-8 text-center p-12 rounded-xl bg-surface transition-all duration-500 hover:bg-surface-container-high hover:-translate-y-2">
+<div class="inline-flex items-center justify-center w-20 h-20 rounded-full border border-outline-variant/30 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">visibility_off</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline text-2xl">Discreet</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">
+                                Our presence is felt, never heard. We operate with absolute confidentiality, ensuring your private life remains precisely that.
+                            </p>
+</div>
+</div>
+<!-- Personal -->
+<div class="group space-y-8 text-center p-12 rounded-xl bg-surface transition-all duration-500 hover:bg-surface-container-high hover:-translate-y-2">
+<div class="inline-flex items-center justify-center w-20 h-20 rounded-full border border-outline-variant/30 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">person_pin</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline text-2xl">Personal</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">
+                                No two lives are the same. We tailor our companionship to match the intellectual and social rhythms of your daily existence.
+                            </p>
+</div>
+</div>
+<!-- Refined -->
+<div class="group space-y-8 text-center p-12 rounded-xl bg-surface transition-all duration-500 hover:bg-surface-container-high hover:-translate-y-2">
+<div class="inline-flex items-center justify-center w-20 h-20 rounded-full border border-outline-variant/30 group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">auto_awesome</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline text-2xl">Refined</h3>
+<p class="text-on-surface-variant font-light leading-relaxed">
+                                From cultural outings to quiet evenings, we uphold a standard of elegance that reflects your personal legacy.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Cinematic Gallery -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="grid grid-cols-12 gap-8 h-[1200px] md:h-[800px]">
+<!-- Bento Style Gallery -->
+<div class="col-span-12 md:col-span-7 relative group overflow-hidden rounded-xl">
+<img alt="Calmness" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Interior of a luxury wellness spa with soft stone textures, dim warm lighting and a quiet atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8G16GVX6HFWxxnOXQkduZUfbbLjOl4sNvMM25qHkMqlbYG81hUdNMDBLHv4IOdk8RVWDGLVjFySvLft7Y5M7gkKxCJhfuII5y3_O6UNuGnm1qrv8X-YvPiDqf7uVwUxQFYpbo7vDAGhhU00HLtTzaIBTiAvOa8jafa75Uttj5O9IBbTuwsnB5hH0jkAAtte4ZoRW0lNXG8tlCvTS9qf-adcP9_IMgUwRby7JsASSknRo0TcmjIbqiLZmhuJNvnOPQzryM0lII86Y"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+<div class="absolute bottom-8 left-8">
+<p class="font-headline text-2xl italic">Curated Environments</p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 grid grid-rows-2 gap-8">
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Legacy" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Side profile of an elegant elderly woman looking out a window with soft natural light illuminating her face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7UenuPiQHLX_Sz2pHa2awYC_6Nfut--thum02cmhr2HstB8UdgODR2Xp9Gk0eCCjG13MKBgsnGJGpdXqlgnUGysUQB3IhgGVk_YHsatZK01VcQBDyKWU1q-s6gN50V3MVZR3o7j9uO1TqkUPLP8vkEv0ymDJXseRtVfshHLTZ6X3xXMRuP_dDcMd6R5jTJo2uRSzdKdmnqbZseQiD9kREKSkRZVIXcpGKzHn7FRMM17DdkhzSiGjFUuc9w_xvxDEQ_g7oSnqfUug"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+</div>
+<div class="relative group overflow-hidden rounded-xl">
+<img alt="Engagement" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A group of well-dressed seniors enjoying a private opera performance in an intimate velvet-draped salon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs5BwuAgiMEQVKI2ForaDt9eq0KSmhNSW7ZpYJ0X8hfkAwfW0AGk7Dsxa2C_TyasDcPMVao4_-iBqzWton-P8AUeyTCBMAXQT7BOjNhMWJnyA7spIPpSLRlxp2JHYnUoM-yx3lb9vqRkV0MzKBDh3vdLgwFOhXJuaHrN1MkqBGPaOCah0boufHFAsvrIh0SKZ78b1rwKufdbsV0E_rr5rLtLaQr1rpOkg79CXhh0VcK6aA0-diefcC07jSGX4BucsVeyG1BFV71Gw"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+</div>
+</div>
+<div class="col-span-12 relative h-64 group overflow-hidden rounded-xl">
+<img alt="Global Reach" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Wide shot of a luxury private jet cabin interior with leather seats and warm golden lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChVre7gbTf1YK55fAgAKJVNIze2IApJF8bnTma-mYPcTRgWfUL86-89MP9co-x-Csuhey80vltRuruXCL5omEOyPUGKn9MMkjW0y0VAk3ba09Y0js_PxOIbIYsgxzqM0xE6bxQypitKWt3taP3Ond9GC1UkCp29YooLzJjppmSrTqbe74vAVGl89ASc7vOy6JvJ0UZM3QGSi5TM7gwNZhk55lGvJ7rHhb_aHSraV4E3TYFqILMRIKWJYk7GawhAhcbhcIM7qksJUc"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="font-headline text-3xl tracking-widest uppercase">Global Presence. Local Care.</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="max-w-4xl mx-auto text-center px-6">
+<h2 class="font-headline text-5xl mb-12 italic leading-tight">Allow us to accompany your next chapter with the dignity it deserves.</h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-xl font-bold tracking-widest uppercase text-sm shadow-xl hover:opacity-90 transition-all">
+                        Inquire Privately
+                    </button>
+<button class="text-on-surface hover:text-primary px-10 py-4 font-bold tracking-widest uppercase text-sm transition-colors border-b border-primary">
+                        View Our Services
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#2a2a2a] bg-[#0e0e0e] dark:bg-[#0e0e0e]">
+<div class="flex flex-col items-center gap-8 py-20 px-12 text-center">
+<div class="text-lg font-noto-serif italic text-[#d4af37]">THE PRIVATE CONCIERGE</div>
+<div class="flex flex-wrap justify-center gap-8 font-manrope text-xs tracking-widest uppercase text-[#c7c6c4]">
+<a class="hover:text-[#f2ca50] transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-[#f2ca50] transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-[#f2ca50] transition-colors" href="#">Imprint</a>
+<a class="hover:text-[#f2ca50] transition-colors" href="#">Press</a>
+<a class="hover:text-[#f2ca50] transition-colors" href="#">Careers</a>
+</div>
+<div class="text-[#f2ca50] font-manrope text-[10px] tracking-[0.2em] uppercase opacity-70">
+                © THE PRIVATE CONCIERGE. BY PRIVATE APPOINTMENT ONLY.
+            </div>
+</div>
+</footer>
+</body></html>
