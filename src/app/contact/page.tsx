@@ -41,15 +41,16 @@ export default function Contact() {
             <div>
               <h4 className="font-label text-[10px] tracking-[0.4em] uppercase text-primary mb-4">Direct Communication</h4>
               <div className="space-y-2">
-                <p className="text-lg md:text-xl font-light text-on-surface">mumbai@privateconcierge.com</p>
+                <p className="text-lg md:text-xl font-light text-on-surface">theprivateconcierge20@gmail.com</p>
                 <p className="text-lg md:text-xl font-light text-on-surface">+91 22 6123 4567</p>
               </div>
             </div>
             <div>
               <h4 className="font-label text-[10px] tracking-[0.4em] uppercase text-primary mb-4">Global Headquarters</h4>
               <p className="text-on-surface-variant font-light leading-loose">
-                Bandra Kurla Complex, Mumbai<br />
-                Maharashtra, India
+                Karjat, Mumbai<br />
+                Maharashtra, India<br />
+                410201
               </p>
             </div>
           </div>
@@ -57,7 +58,7 @@ export default function Contact() {
 
         {/* Form Column */}
         <div className="lg:col-span-7 bg-surface-container-low p-6 sm:p-10 md:p-16 rounded-xl border border-outline-variant/10 shadow-2xl">
-          <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
+          <form className="space-y-10" action="https://formspree.io/f/xvzdapre" method="POST">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="relative">
                 <label className="block font-label text-[10px] tracking-widest uppercase text-primary/70 mb-1">Full Name</label>
@@ -65,6 +66,8 @@ export default function Contact() {
                   className="w-full py-4 text-on-surface placeholder:text-surface-container-highest/50 font-light tracking-wide bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary transition-all duration-300 focus:outline-none focus:pl-1"
                   placeholder="ALEXANDER STERLING"
                   type="text"
+                  name="name"
+                  required
                 />
               </div>
               <div className="relative">
@@ -73,6 +76,8 @@ export default function Contact() {
                   className="w-full py-4 text-on-surface placeholder:text-surface-container-highest/50 font-light tracking-wide bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary transition-all duration-300 focus:outline-none focus:pl-1"
                   placeholder="A.STERLING@DOMAIN.COM"
                   type="email"
+                  name="email"
+                  required
                 />
               </div>
             </div>
@@ -83,6 +88,7 @@ export default function Contact() {
                   className="w-full py-4 text-on-surface placeholder:text-surface-container-highest/50 font-light tracking-wide bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary transition-all duration-300 focus:outline-none focus:pl-1"
                   placeholder="+1 (000) 000-0000"
                   type="tel"
+                  name="phone"
                 />
               </div>
               <div className="relative">
@@ -91,6 +97,7 @@ export default function Contact() {
                   className="w-full py-4 text-on-surface placeholder:text-surface-container-highest/50 font-light tracking-wide bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary transition-all duration-300 focus:outline-none focus:pl-1"
                   placeholder="MUMBAI / SOUTH BOMBAY"
                   type="text"
+                  name="city"
                 />
               </div>
             </div>
@@ -100,6 +107,8 @@ export default function Contact() {
                 className="w-full py-4 text-on-surface placeholder:text-surface-container-highest font-light tracking-wide bg-transparent border-0 border-b border-outline-variant/20 focus:ring-0 focus:border-primary transition-all resize-none focus:outline-none"
                 placeholder="PLEASE DESCRIBE YOUR UNIQUE NEEDS..."
                 rows={4}
+                name="message"
+                required
               ></textarea>
             </div>
             <div className="pt-6">

@@ -17,7 +17,7 @@ export default function TopNavBar() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
-    { href: "/companions", label: "Companions" },
+    { href: "/companions", label: "Leadership" },
     { href: "/nri", label: "For NRI Families" },
     { href: "/contact", label: "Contact" },
   ];
